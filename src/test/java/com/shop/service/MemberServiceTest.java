@@ -48,12 +48,14 @@ class MemberServiceTest {
     @Test
     @DisplayName("중복 회원 가입테스트")
     public void saveDuplicateMemberTest() {
-        Member member = createMember();
-        Member savedMember = memberService.saveMember(member);
+        Member member1 = createMember();
         Member member2 = createMember();
+        memberService.saveMember(member1);
 
-        Throwable e = assertThrows(IllegalStateException.class, () -> memberService.saveMember(member2));
+        Throwable e = assertThrows(IllegalStateException.class, () -> {
+            memberService.saveMember(member2);
+        });
 
-        assertEquals("이미 가입된 회원입니다.", e.getMessage());
+        assertEquals("이미 가입된 회원입니다", e.getMessage());
     }
 }
