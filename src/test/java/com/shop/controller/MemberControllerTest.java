@@ -1,8 +1,8 @@
 package com.shop.controller;
 
-import com.shop.dto.MemberFormDto;
-import com.shop.entity.Member;
-import com.shop.service.MemberService;
+import com.shop.domain.member.dto.MemberFormDto;
+import com.shop.domain.member.Member;
+import com.shop.domain.member.MemberService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

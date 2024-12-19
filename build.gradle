@@ -43,9 +43,12 @@ dependencies {
     annotationProcessor "com.querydsl:querydsl-apt:5.0.0:jakarta"
     annotationProcessor "jakarta.annotation:jakarta.annotation-api"
     annotationProcessor "jakarta.persistence:jakarta.persistence-api"
-
     // Thymeleaf Layout Dialect 의존성 추가
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.2.0'
+    //modelmapper 의존성 추가
+    implementation 'org.modelmapper.extensions:modelmapper-spring:3.1.1'
+    // batch 의존성 추가
+    implementation 'org.springframework.boot:spring-boot-starter-batch'
 }
 
 tasks.named('test') {
