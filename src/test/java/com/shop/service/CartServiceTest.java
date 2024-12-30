@@ -1,7 +1,7 @@
 package com.shop.service;
 
 import com.shop.global.constant.ItemSellStatus;
-import com.shop.domain.cart.dto.CartItemDto;
+import com.shop.domain.cart.dto.request.CartItemDto;
 import com.shop.domain.cart.entity.CartItem;
 import com.shop.domain.cart.service.CartService;
 import com.shop.domain.item.entity.Item;

@@ -1,5 +1,7 @@
 package com.shop.domain.order;
 
+import com.shop.domain.member.Member;
+import com.shop.global.common.BaseEntity;
 import com.shop.global.constant.OrderStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -14,7 +16,7 @@ import java.util.List;
 @Table(name = "orders")
 @Getter
 @Setter
-public class Order extends BaseEntity{
+public class Order extends BaseEntity {
 
     @Id
     @Column(name = "order_id")

@@ -3,7 +3,7 @@ package com.shop.domain.cart.Repository;
 import com.shop.domain.cart.entity.CartItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.shop.domain.cart.dto.CartDetailDto;
+import com.shop.domain.cart.dto.request.CartDetailDto;
 import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 

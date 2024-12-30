@@ -1,6 +1,7 @@
 package com.shop.domain.order;
 
 import com.shop.domain.item.entity.Item;
+import com.shop.global.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Table(name = "order_item")
-public class OrderItem extends BaseEntity{
+public class OrderItem extends BaseEntity {
 
     @Id
     @Column(name = "order_item_id")

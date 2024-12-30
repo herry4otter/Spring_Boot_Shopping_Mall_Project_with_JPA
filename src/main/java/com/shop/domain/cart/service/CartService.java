@@ -1,6 +1,6 @@
 package com.shop.domain.cart.service;
 
-import com.shop.domain.cart.dto.CartItemDto;
+import com.shop.domain.cart.dto.request.CartItemDto;
 import com.shop.domain.cart.entity.Cart;
 import com.shop.domain.cart.entity.CartItem;
 import com.shop.domain.item.entity.Item;
@@ -14,12 +14,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import jakarta.persistence.EntityNotFoundException;
 
-import com.shop.domain.cart.dto.CartDetailDto;
+import com.shop.domain.cart.dto.request.CartDetailDto;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.thymeleaf.util.StringUtils;
-import com.shop.domain.cart.dto.CartOrderDto;
+import com.shop.domain.cart.dto.response.CartOrderDto;
 import com.shop.domain.order.dto.OrderDto;
 
 @Service

@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Properties 추적 금지 ###
+.properties

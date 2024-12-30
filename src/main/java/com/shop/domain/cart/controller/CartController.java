@@ -1,6 +1,6 @@
 package com.shop.domain.cart.controller;
-import com.shop.domain.cart.dto.CartDetailDto;
-import com.shop.domain.cart.dto.CartItemDto;
+import com.shop.domain.cart.dto.request.CartDetailDto;
+import com.shop.domain.cart.dto.request.CartItemDto;
 import com.shop.domain.cart.service.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -21,7 +21,8 @@ public class CartController {
     private final CartService cartService;
 
     @PostMapping(value = "/cart")
-    public @ResponseBody ResponseEntity<?> order(@RequestBody @Valid CartItemDto cartItemDto, BindingResult bindingResult, Principal principal) {
+    public @ResponseBody ResponseEntity<?> order(@RequestBody @Valid CartItemDto cartItemDto,
+                                                 BindingResult bindingResult, Principal principal) {
 
         if (bindingResult.hasErrors()) {
             StringBuilder sb = new StringBuilder();

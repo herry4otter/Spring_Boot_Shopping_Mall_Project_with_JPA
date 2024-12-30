@@ -2,6 +2,7 @@ package com.shop.domain.cart.entity;
 
 import com.shop.domain.cart.entity.Cart;
 import com.shop.domain.item.entity.Item;
+import com.shop.global.common.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,7 +10,7 @@ import lombok.Setter;
 @Entity
 @Getter @Setter
 @Table(name = "cart_item")
-public class CartItem extends BaseEntity{
+public class CartItem extends BaseEntity {
 
     @Id @GeneratedValue
     @Column

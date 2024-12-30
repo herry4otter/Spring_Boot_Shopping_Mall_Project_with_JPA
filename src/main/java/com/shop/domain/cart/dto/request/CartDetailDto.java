@@ -1,4 +1,4 @@
-package com.shop.domain.cart.dto;
+package com.shop.domain.cart.dto.request;
 
 import lombok.Getter;
 import lombok.Setter;
